@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    list-style: none;
+    text-decoration: none;
+}
+.txt-16px{
+    font-size: 16px;
+    color: #333;
+}
+.txt_bold{
+    font-size: 16px;
+    color: ;
+}
+#header{
+
+}
+#header .top_header{
+    height: 40px;
+    background-color: #FDE2E2;
+}

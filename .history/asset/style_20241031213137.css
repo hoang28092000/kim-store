@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    list-style: none;
+    text-decoration: none;
+}
+.txt-16px{
+    font-size: 16px;
+    color: #333;
+}
+.txt_bold{
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+#header{
+
+}
+#header .top_header{
+    height: 40px;
+    background-color: #FDE2E2;
+}
+.top_header .r-top_header{
+    height: 40px;
+}
+.top_header .icon-truck ,
+.icon_fb{
+    font-size: 18px;
+    color: #333;
+}
