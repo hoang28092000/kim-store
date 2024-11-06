@@ -6,8 +6,14 @@
     list-style: none;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .txt-decoration_none{
     text-decoration: none;
+}
+.background_palse{
+    background-color:#c19292;
 }
 .txt-16px{
     font-size: 16px;
@@ -18,12 +24,32 @@
     color: #625656;
     font-weight: 700;
 }
+
+.scrolled {
+    box-shadow: 0 2px 5px rgba(49, 49, 49, 0.5); 
+}
+.padding-left{
+    padding-left: 50px;
+}
+
+.opacity{
+    opacity: 0.8;
+}
+.padding-x_80px{
+    padding: 0 80px;
+}
+
 #header{
 
 }
 #header .top_header{
     height: 40px;
     background-color: #FDE2E2;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.5s;
 }
 .top_header .r-top_header{
     height: 40px;
@@ -106,9 +132,21 @@
     color: #f6f6f6;
 }
 
-#navbar .banner{
+
+
+.banner-img{
     height: 500px;
 }
+.news_banner-img{
+    width: 35%;
+    height: 546px
+}
+
+.news_banner-img2{
+    width: 70%;
+}
+
+
 #main{
     background-color: #fce2e1;
 }
@@ -129,13 +167,16 @@
     padding: 3px 4px 3px 5px;
     color: #fff;
 }
-#main .card_product{
+.card_product{
     border: 1px solid #ccc;
     background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .card_product .img-card_product{
-    height: 300px;
+    height: 371px;
 }
+
 .card_product .info_card{
     padding: 12px;
 }
@@ -252,6 +293,141 @@
     height: 163px;
 }
 
+/* main_product */
+#main_product{
+
+}
+.banner_product .img_banner-product{
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+ .banner_product .img_banner-product:hover{
+    transform: scale(0.95);
+}
+
+#main-product .title_category{
+    font-size: 24px;
+    color: #625656;
+    font-weight: 600;
+    padding-left: 4px;
+}
+
+#main-product .item_category{
+
+}
+.item_category .link-category{
+    display: block;
+    font-size: 20px;
+    color: #625656;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 3px 0 3px 10px;
+
+}
+.item_category .link-category:hover{
+    background-color: #fce2e1;
+    color: #625656;
+}
+.btn-view_more {
+    border: 1px solid #6d6969;
+    padding: 10px 72px;
+    border-radius: 4px;
+}
+.btn-view_more .btn-view-more_link{
+    font-size: 20px;
+    color: #625656;
+    font-weight: 500;
+}
+.title-product{
+    font-size: 24px;
+    color: #625656;
+    font-weight: 500;
+}
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+
+/* main about_us */
+#main-about_us .txt-title{
+    font-size: 24px;
+    color: #625656;
+    font-weight: 600;
+}
+#main-about_us .title-content{
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#main-about_us .text-content{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/* main news */
+#main-news .img-news{
+    border-radius: 5px;
+    height: 200px;
+}
+
+#main-news .content-news .link-news{
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+}
+#main-news .content-news .link-news:hover{
+    color: #bf2352;
+}
+.content-news .art-summary{
+    font-size: 18px;
+}
+.content-news .btn-custome{
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+}
+.content-news .btn-custome:hover{
+    color: #0468ff;
+}
+
+.category-title{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.news-link_category{
+    font-size: 16px;
+    opacity: 0.7;
+    color: #333;
+    text-decoration: none;
+}
+.img-blog_item{
+    width: 80px;
+    height: 60px;
+    border-radius: 5px;
+}
+.content-blog{
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+/* single news */
+.title-single_news{
+    font-size: 24px;;
+    color: #625656;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+
 /* footer */
 #footer{
     background-color: #fce2e1;
@@ -280,4 +456,11 @@
     color: #fff;
     cursor: pointer;
 }
-
+#footer .map_footer{
+    height: 200px;
+    border-radius: 10px;
+}
+#footer .map_footer :hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
